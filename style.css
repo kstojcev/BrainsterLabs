@@ -1,0 +1,275 @@
+nav {
+  background-image: url("assets/banner2.jpg");
+  background-color: grey;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar-brand {
+  height: 11vh;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.hover_effect:hover {
+  box-shadow: 0px 12px 11px -8px rgba(255, 255, 255, 0.7);
+}
+
+.employ-icon {
+  display: none;
+}
+
+.fa-caret-down {
+  color: white;
+}
+
+.fa-times {
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(189, 187, 187);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(81, 81, 81);
+}
+
+.nav-underline::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.6s ease, background-color 0.4s ease;
+}
+
+.nav-underline:hover:after {
+  width: 100%;
+  background: white;
+}
+
+.heroSection {
+  font-size: 65px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/banner2.jpg");
+  background-color: grey;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+}
+.projects-filter {
+  margin: 0;
+  padding: 0;
+  color: white;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.projects-filter li:hover {
+  cursor: pointer;
+  background-color: #5b5a69;
+}
+
+.projects-filter li {
+  background-color: rgb(48, 47, 56);
+  border-right: 2px solid grey;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+}
+
+.projects-filter li.selected {
+  background-color: #f02f2f;
+  color: #33333a;
+}
+
+.projects-filter li i {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  font-size: 40px;
+  display: none;
+}
+
+.projects-filter li.selected i {
+  display: block;
+}
+
+.projects-title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title-programming {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 1%;
+}
+.btn-programming {
+  background-color: red;
+  color: white;
+}
+
+.title-marketing {
+  display: inline-block;
+  background-color: rgb(127, 68, 245);
+  color: white;
+  padding: 1%;
+}
+.btn-marketing {
+  background-color: rgb(127, 68, 245);
+  color: white;
+}
+
+.title-design {
+  display: inline-block;
+  background-color: rgb(17, 190, 17);
+  color: white;
+  padding: 1%;
+}
+.btn-design {
+  background-color: rgb(17, 190, 17);
+  color: white;
+}
+
+.card {
+  opacity: 0.98;
+}
+
+.card:hover {
+  opacity: 1;
+  border: 1px solid rgb(185, 140, 26);
+  box-shadow: 0px 0px 75px -1px rgba(0, 0, 0, 0.44);
+  cursor: pointer;
+}
+
+.card {
+  box-shadow: 0px 0px 40px -1px rgba(0, 0, 0, 0.44);
+}
+
+.card-animation:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.03);
+}
+
+/* Media Settings */
+@media only screen and (max-width: 768px) {
+  .nav-item {
+    font-size: 12px !important;
+    text-align: center;
+  }
+  .navbar-brand {
+    height: 14vh;
+  }
+  .nav_button {
+    padding-top: 1% !important;
+  }
+  .employ-icon {
+    display: block;
+  }
+  .employ-text {
+    display: none;
+  }
+  .nav-underline::after {
+    display: none;
+  }
+  .projects-filter {
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .projects-filter li {
+    border-bottom: 2px solid grey;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .nav-shown {
+    background-color: rgb(39, 39, 39) !important;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .navbar-brand {
+    height: 16vh;
+  }
+  .nav-item {
+    font-size: 14px !important;
+    text-align: left;
+  }
+  .employ-icon {
+    display: none;
+  }
+  .employ-text {
+    display: block;
+  }
+  .heroSection {
+    background-attachment: fixed;
+  }
+  .projects-filter {
+    flex-direction: column;
+    font-size: 18px;
+  }
+  .projects-filter li {
+    border-bottom: 2px solid grey;
+  }
+  .projects-filter > li > i {
+    font-size: 35px;
+    right: 15px;
+    top: 30px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .heroSection {
+    background-attachment: fixed;
+  }
+  .projects-filter {
+    flex-direction: column;
+    font-size: 17px;
+  }
+  .projects-filter > li > i {
+    font-size: 26px;
+    right: 6px;
+    top: 30px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .heroSection {
+    background-attachment: fixed;
+  }
+  .projects-filter {
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .projects-filter > li > i {
+    font-size: 26px;
+    right: 6px;
+    top: 30px;
+  }
+}

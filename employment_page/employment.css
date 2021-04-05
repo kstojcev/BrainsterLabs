@@ -1,0 +1,148 @@
+nav {
+  box-shadow: 0px 16px 32px -17px rgba(0, 0, 0, 0.75);
+  background-color: black;
+}
+
+.navbar-brand {
+  height: 11vh;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.nav-underline::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.6s ease, background-color 0.4s ease;
+}
+
+.nav-underline:hover:after {
+  width: 100%;
+  background: white;
+}
+
+.fa-caret-down {
+  color: white;
+}
+
+.fa-times {
+  color: white;
+}
+
+.employ-icon {
+  display: none;
+}
+
+.hover_effect:hover {
+  box-shadow: 0px 12px 11px -8px rgba(255, 255, 255, 0.7);
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(189, 187, 187);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(81, 81, 81);
+}
+
+.nav-underline::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.6s ease, background-color 0.4s ease;
+}
+
+.nav-underline:hover:after {
+  width: 100%;
+  background: white;
+  opacity: 80%;
+}
+
+.employ-title {
+  font-size: 63px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 7%;
+}
+
+.formSection {
+  padding: 7%;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;
+}
+::-moz-placeholder {
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  font-style: italic;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    height: 14vh;
+  }
+  .nav-item {
+    font-size: 12px !important;
+    text-align: center;
+  }
+  .nav_button {
+    padding-top: 1% !important;
+  }
+  .employ-icon {
+    display: block;
+  }
+  .employ-text {
+    display: none;
+  }
+  .nav-underline::after {
+    display: none;
+  }
+  .projects-filter {
+    flex-direction: column;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .nav-shown {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .navbar-brand {
+    height: 16vh;
+  }
+  .nav-item {
+    font-size: 14px !important;
+    text-align: left;
+  }
+  .employ-icon {
+    display: none;
+  }
+  .employ-text {
+    display: block;
+  }
+}
